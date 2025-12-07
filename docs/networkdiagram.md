@@ -1,10 +1,10 @@
  ┌────────────────────────────────────────┐
  │ Windows Host (Attacker Browser)        │
- │ IP: 10.10.76.20                        │
+ │ IP: 10.10.76.20 or 192.168.159.1       │
  │ Role: BeEF Panel access + Victim #1    │
  └────────────────────────────────────────┘
                 ▲
-                │ HTTP 3000 (UI Panel) + Hook communication
+                │ HTTP 3000 (UI Panel) + Hook communication + Victim machine
                 ▼
  ┌────────────────────────────────────────┐
  │ Kali Linux VM (Attacker Machine)       │
@@ -18,7 +18,7 @@
                 ▼
  ┌────────────────────────────────────────┐
  │ Windows VM (Victim Browser)            │
- │ IP: TBD                                │
+ │ IP: 192.168.159.159                    │
  │ Role: Browser exploitation target      │
  └────────────────────────────────────────┘
 

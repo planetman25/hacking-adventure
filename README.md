@@ -1,4 +1,4 @@
-# This is the BIG hacking adventure performed by Manuel Manrique and Ricardo Rubin
+# This is the BIG hacking adventure performed by Manuel Manrique and Ricardo Rubin - Browser Exploitation Framework and phishing simulation
 
 This project demonstrates legal and controlled browser exploitation techniques using BeEF (Browser Exploitation Framework), including:
 - Browser hook deployment
@@ -14,7 +14,6 @@ This project demonstrates legal and controlled browser exploitation techniques u
 BeEF (Browser Exploitation Framework)   -version 0.5.4.0                           -source Installed from GitHub release source
 Kali Linux VM	                        -version Latest Rolling release (2025-xx)  
 VM                                      -Spects       -processors 4       -RAM 4GB       -50GB Disk
-
 
 Windows Host	                        -version Windows 11	                       -notes Browser target + Panel access
 Windows VM                              -version Windows 10                        -notes Victim machine 
@@ -51,3 +50,13 @@ To solve this follow instructions:
 
 Once this issues are solved, just start the service with *./beef*
 
+If you want to run BeEF as a service go to "Docs" and find the guide. 
+
+***Attack Scenario***
+
+To perform the attack you should refer to the Attack guide with instructions on how to replicate the attack and then, enhance it and make it work in a real life scenario.
+This lab demonstrates a client-side exploitation scenario using the Browser Exploitation Framework (BeEF). By persuading the victim to click a malicious link (phishing), the attacker can execute JavaScript in the victim’s browser, gain remote control, and perform reconnaissance on internal networks.
+
+***Hardening instructions***
+
+Same as the attack scenario, there is a guide available to follow and replicate how to harden the defenses against this type of attack. Remember to always have the strongest shield. The effectiveness of the attack was reduced by applying browser hardening techniques such as disabling WebRTC/WebSockets, enforcing a strict Content Security Policy (CSP), and minimizing untrusted browser extensions. These layered defenses prevented BeEF from establishing command-and-control channels, immediately breaking persistence and blocking further exploitation attempts.
